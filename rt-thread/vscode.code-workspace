@@ -1,0 +1,111 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../../home/vscode/rt-thread/bsp/stm32/libraries/HAL_Drivers",
+            "name": "rtthread/home/vscode/rt-thread/bsp/stm32/libraries/HAL_Drivers"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/bsp/stm32/libraries/HAL_Drivers/drivers",
+            "name": "rtthread/home/vscode/rt-thread/bsp/stm32/libraries/HAL_Drivers/drivers"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/bsp/stm32/libraries/HAL_Drivers/drivers/config",
+            "name": "rtthread/home/vscode/rt-thread/bsp/stm32/libraries/HAL_Drivers/drivers/config"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/core",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/core"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/include",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/include"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/ipc",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/ipc"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/phy",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/phy"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/pin",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/pin"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/rtc",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/rtc"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/serial",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/serial"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/smp_call",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/smp_call"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/spi",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/spi"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/drivers/watchdog",
+            "name": "rtthread/home/vscode/rt-thread/components/drivers/watchdog"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/finsh",
+            "name": "rtthread/home/vscode/rt-thread/components/finsh"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/compilers/common",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/compilers/common"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/compilers/common/include",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/compilers/common/include"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/compilers/newlib",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/compilers/newlib"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/posix/io/epoll",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/posix/io/epoll"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/posix/io/eventfd",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/posix/io/eventfd"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/posix/io/poll",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/posix/io/poll"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/components/libc/posix/ipc",
+            "name": "rtthread/home/vscode/rt-thread/components/libc/posix/ipc"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/include",
+            "name": "rtthread/home/vscode/rt-thread/include"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/libcpu/arm/common",
+            "name": "rtthread/home/vscode/rt-thread/libcpu/arm/common"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/libcpu/arm/cortex-m4",
+            "name": "rtthread/home/vscode/rt-thread/libcpu/arm/cortex-m4"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/src",
+            "name": "rtthread/home/vscode/rt-thread/src"
+        },
+        {
+            "path": "../../home/vscode/rt-thread/src/klibc",
+            "name": "rtthread/home/vscode/rt-thread/src/klibc"
+        }
+    ]
+}

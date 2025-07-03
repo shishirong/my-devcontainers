@@ -1,0 +1,20 @@
+mainmenu "RT-Thread Configuration"
+
+BSP_DIR := .
+
+# RTT_DIR := ../../..
+
+config SOC_STM32L431RC
+    bool
+    select SOC_SERIES_STM32L4
+    select RT_USING_COMPONENTS_INIT
+    select RT_USING_USER_MAIN
+    default y
+
+source "$(RTT_DIR)/Kconfig"
+source "$(RTT_DIR)/bsp/stm32/libraries/Kconfig"
+source "$(PKGS_DIR)/Kconfig"
+
+if !RT_USING_NANO
+source "board/Kconfig"
+endif
