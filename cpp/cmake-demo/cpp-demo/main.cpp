@@ -3,6 +3,6 @@
 int main(int argc, char *argv[])
 {
     spdlog::set_level(spdlog::level::trace);
-    spdlog::info("Hello cmake cpp demo !\nbuild:\t{}\t{}",__DATE__, __TIME__);
+    spdlog::info("{}\tbuild: {} {}", PROJECT_NAME, __DATE__, __TIME__);
     return 0;
 }

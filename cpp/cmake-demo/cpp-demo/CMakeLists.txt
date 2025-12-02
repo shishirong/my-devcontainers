@@ -1,3 +1,4 @@
+cmake_minimum_required (VERSION 3.5)
 project(cpp-demo)
 
 set(THE_CPM_FILE_PATH "${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake")
@@ -19,6 +20,7 @@ CPMFindPackage(
 
 # Create the executable
 add_executable(${PROJECT_NAME} main.cpp)
+target_compile_definitions(${PROJECT_NAME} PRIVATE PROJECT_NAME="${PROJECT_NAME}")
 
 # Link the static library from subproject1 using its alias sub::lib1
 # Link the header only library from subproject2 using its alias sub::lib2

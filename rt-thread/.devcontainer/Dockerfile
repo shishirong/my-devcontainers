@@ -1,6 +1,6 @@
 ## syntax=docker/dockerfile:1
 # 参考 https://github.com/RT-Thread/rt-thread/blob/master/.devcontainer/Dockerfile
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM mcr.microsoft.com/devcontainers/base:focal
 
 # 版本: 例如`v1.5.2`,`master`
 ARG ARG_ENV_VERSION=master

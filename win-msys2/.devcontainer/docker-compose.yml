@@ -1,0 +1,21 @@
+services:
+  windows:
+    image: ghcr.io/dockur/windows
+    container_name: windows
+    environment:
+      VERSION: "10"
+      RAM_SIZE: "16G"
+      CPU_CORES: "8"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 48006:8006
+      - 43389:3389/tcp
+      - 43389:3389/udp
+    volumes:
+      - ..:/shared
+    restart: on-failure:3
+    stop_grace_period: 2m

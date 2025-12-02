@@ -1,0 +1,58 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/alpine
+{
+	"name": "msys2-docker",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "ghcr.io/msys2/msys2-docker-devcontainer", // base->experimental->devcontainer
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+    "mounts": [
+        "source=/dev/,target=/dev/,type=bind,consistency=consistent" // 映射设备,以方便热插拔
+    ],
+	"runArgs": [
+		"--privileged=true"  // 特权模式,允许访问所有设备
+	],
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "MSYS2-UCRT64",
+                "terminal.integrated.profiles.linux": {
+                    "MSYS2-UCRT64": {
+                        "color": "terminal.ansiGreen",
+                        "path": "msys2",
+                        "env": {
+                            "MSYSTEM": "UCRT64"
+                        }
+                    },
+                    "MSYS2-CLANG64": {
+                        "path": "msys2",
+                        "env": {
+                            "MSYSTEM": "CLANG64"
+                        }
+                    },
+                    "MSYS2-MSYS": {
+                        "path": "msys2",
+                        "env": {
+                            "MSYSTEM": "MSYS"
+                        }
+                    }
+                }
+			},
+			"extensions": [
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools"
+			]
+        }
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

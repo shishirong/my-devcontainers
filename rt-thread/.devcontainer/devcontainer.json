@@ -7,8 +7,14 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	"runArgs": [ "--privileged=true" ],
+	"runArgs": [
+		"--privileged=true"
+	],
+	"containerEnv": {
+		"TZ": "Asia/Shanghai"
+	},
 	"mounts": [
+		// "source=/mnt/,target=/mnt/,type=bind,consistency=consistent",
 		"source=/dev/,target=/dev/,type=bind,consistency=consistent"
 	],
 
@@ -19,7 +25,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
 
 	// Configure tool-specific properties.
 	"customizations": {
